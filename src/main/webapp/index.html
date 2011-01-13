@@ -1,0 +1,28 @@
+<lift:surround with="default" at="content">
+  <div class="colborder ">
+    <hr class="space" />
+    <table>
+      <lift:termAutoComplete.show version_box_id="dddddddversionBoxi">
+        <tr>
+          <th>Search:</th>
+        </tr>
+        <ajax:text />
+        <br />
+        <hr class="space" />
+      </lift:termAutoComplete.show>
+    </table>
+    <lift:sideBar.terms id_verList="versionList">
+      <table>
+        <tr>
+          <th>Results</th>
+        </tr>
+          <div id="versionList"></div>
+          <Versions:list>
+            <tr>
+            </tr>
+          </Versions:list>
+      </table>
+    </lift:sideBar.terms>
+  </div>
+</lift:surround>
+
